@@ -4,6 +4,8 @@ dependencies:
   react: 17.0.1
   react-dom: 17.0.1_react@17.0.1
   react-icons: 4.1.0_react@17.0.1
+  react-tilt: 0.1.4_react-dom@17.0.1+react@17.0.1
+  react-vanilla-tilt: 1.0.0
 devDependencies:
   '@babel/core': 7.12.10
   '@storybook/addon-actions': 6.1.10_react-dom@17.0.1+react@17.0.1
@@ -9430,6 +9432,22 @@ packages:
       react: ^16.8.0 || ^17.0.0
     resolution:
       integrity: sha512-3GLWFAan2pbwBeoeNDoqGmSbrShORtgWfaWX0RJDivsUrpShh01saRM5RU/i4Zmf+whpBVEY5cA90Eq8Ub1N3w==
+  /react-tilt/0.1.4_react-dom@17.0.1+react@17.0.1:
+    dependencies:
+      react: 17.0.1
+      react-dom: 17.0.1_react@17.0.1
+    dev: false
+    peerDependencies:
+      react: ^15.0.0 || ^16.0.0-beta || ^16.0.0
+      react-dom: ^15.0.0 || ^16.0.0-beta || ^16.0.0
+    resolution:
+      integrity: sha512-bVeRumg+RIn6QN8S92UmubGqX/BG6/QeQISBeAcrS/70dpo/jVj+sjikIawDl5wTuPdubFH8zH0EMulWIctsnw==
+  /react-vanilla-tilt/1.0.0:
+    dependencies:
+      vanilla-tilt: 1.4.1
+    dev: false
+    resolution:
+      integrity: sha512-AuFFvbudpQIdzPeci9kP4p4Mo3QVIEtFVNu+iskMzNT0Efhi1fH5wzmdfMqWX8g82ypVgjAlwgdBWL9opnL2ow==
   /react/17.0.1:
     dependencies:
       loose-envify: 1.4.0
@@ -9712,7 +9730,7 @@ packages:
     resolution:
       integrity: sha512-QEb4A76c8Mi7I3xNKXlRKQSlLBwjUV/ULFMP+G7n3/7tJZ8MG5wsZ3ucxP1Jz8Vevn6fnJsxDx9cIls+utGzPQ==
   /resolve-url/0.2.1:
-    deprecated: 'https://github.com/lydell/resolve-url#deprecated'
+    deprecated: https://github.com/lydell/resolve-url#deprecated
     resolution:
       integrity: sha1-LGN/53yJOv0qZj/iGqkIAGjiBSo=
   /resolve/1.19.0:
@@ -11200,7 +11218,7 @@ packages:
     resolution:
       integrity: sha512-B0yRTzYdUCCn9n+F4+Gh4yIDtMQcaJsmYBDsTSG8g/OejKBodLQ2IHfN3bM7jUsRXndopT7OIXWdYqc1fjmV6g==
   /urix/0.1.0:
-    deprecated: 'Please see https://github.com/lydell/urix#deprecated'
+    deprecated: Please see https://github.com/lydell/urix#deprecated
     resolution:
       integrity: sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
   /url-loader/4.1.1_file-loader@6.2.0+webpack@4.44.2:
@@ -11319,6 +11337,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-gTpR5XQNKFwOd4clxfnhaqvfqMpqEwr4tOtCyz4MtYZX2JYhfr1JvBFKdS+7K/9rfpZR3VLX+YWBbKoxCgS43Q==
+  /vanilla-tilt/1.4.1:
+    dev: false
+    resolution:
+      integrity: sha512-yZS4jIejmhqThLlwzJ5juPwDMk6rtf+ekADDK1lAYNiw6H2VGAJr9bt8vCp+ED5kyK6sE0sMq6mxPfV8a/NdFw==
   /vary/1.1.2:
     dev: true
     engines:
@@ -11653,6 +11675,8 @@ specifiers:
   react: 17.0.1
   react-dom: 17.0.1
   react-icons: ^4.1.0
+  react-tilt: ^0.1.4
+  react-vanilla-tilt: ^1.0.0
   sass: ^1.30.0
   sass-loader: ^10.1.0
   style-loader: ^2.0.0

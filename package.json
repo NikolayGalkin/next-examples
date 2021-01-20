@@ -14,7 +14,9 @@
     "next": "10.0.3",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-icons": "^4.1.0"
+    "react-icons": "^4.1.0",
+    "react-tilt": "^0.1.4",
+    "react-vanilla-tilt": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",

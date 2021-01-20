@@ -5,9 +5,11 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      colors: {},
+      colors: {
+        'black-pearl': '#091921',
+      },
       fontFamily: {
-        // sans: ['Roboto', 'sans-serif'],
+        sans: ['Quicksand', 'sans-serif'],
       },
       borderWidth: {
         1: '1px',

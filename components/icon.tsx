@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import cn from 'classnames'
+import clsx from 'clsx'
 import { AiFillInstagram } from 'react-icons/ai'
 import { IoLogoFacebook } from 'react-icons/io'
 import { RiPhoneFill } from 'react-icons/ri'
@@ -22,7 +22,7 @@ type Props = {
 }
 
 const Icon: FC<Props> = ({ variant, className, size = 'md', color = 'carolina-blue' }: Props) => {
-  const classes = cn('inline-block', className, `text-${color}`, {
+  const classes = clsx('inline-block', className, `text-${color}`, {
     'text-md': size === 'xs',
     'text-2xl': size === 'md',
     'text-3xl': size === 'lg',

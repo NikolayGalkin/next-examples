@@ -1,5 +1,5 @@
 import { ReactNode, FC } from 'react'
-import cn from 'classnames'
+import clsx from 'clsx'
 
 type Props = {
   children: ReactNode
@@ -18,7 +18,7 @@ type Props = {
 // ])
 
 export const Button: FC<Props> = ({ children, className }: Props) => {
-  const styles = cn(
+  const styles = clsx(
     className,
     `border-0
     text-white text-sm leading-none

@@ -1,6 +1,5 @@
-const plugin = require('tailwindcss/plugin')
-
 module.exports = {
+  mode: 'jit',
   purge: ['./pages/**/*.tsx', './components/**/*.tsx'],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -9,7 +8,7 @@ module.exports = {
         'black-pearl': '#091921',
       },
       fontFamily: {
-        sans: ['Quicksand', 'sans-serif'],
+        sans: ['Poppins', 'sans-serif'],
       },
       borderWidth: {
         1: '1px',
@@ -19,17 +18,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [
-    require('tailwindcss-pseudo-elements'),
-    plugin(function ({ addUtilities }) {
-      addUtilities(
-        {
-          '.empty-content': {
-            content: "''",
-          },
-        },
-        ['before', 'after', 'hover', 'responsive']
-      )
-    }),
-  ],
+  plugins: [require('tailwindcss-pseudo-elements')],
 }

@@ -6,7 +6,6 @@ const HomePage: NextPage = () => (
   <main className="flex items-center justify-center min-h-screen">
     <Head>
       <title>Home Page</title>
-      <link rel="icon" href="/favicon.ico" />
     </Head>
     Home Page
   </main>

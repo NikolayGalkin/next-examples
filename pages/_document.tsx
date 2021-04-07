@@ -17,13 +17,9 @@ class MyDocument extends Document {
     return (
       <Html lang="ru">
         <Head>
-          {/* <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap"
-            rel="stylesheet"
-          /> */}
+          <link rel="icon" href="/favicon.ico" />
         </Head>
-        <body>
+        <body className="font-sans text-base">
           <Main />
           <NextScript />
         </body>

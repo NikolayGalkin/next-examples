@@ -199,7 +199,7 @@ const InboxPage: NextPage = () => (
                   magni, dolor necessitatibus vero inventore maxime ad? Sed, esse.
                 </p>
               </a>
-              <a href="#" className="px-6 pt-3 pb-4 bg-white border-t">
+              <a href="#" className="px-6 pt-3 pb-4 bg-gray-200 border-t">
                 <div className="flex justify-between">
                   <span className="text-sm font-semibold text-gray-900">Gloria Robertson</span>
                   <span className="text-sm text-gray-600">2 days ago</span>

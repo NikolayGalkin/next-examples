@@ -19,7 +19,7 @@ class MyDocument extends Document {
         <Head>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <body className="font-sans text-base">
+        <body className="font-sans text-base antialiased">
           <Main />
           <NextScript />
         </body>

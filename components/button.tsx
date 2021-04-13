@@ -1,23 +1,12 @@
-import { ReactNode, FC } from 'react'
+import { FC, HTMLAttributes } from 'react'
 import clsx from 'clsx'
 
-type Props = {
-  children: ReactNode
-  className?: string
+interface IButton extends HTMLAttributes<HTMLButtonElement> {
   block?: boolean
   big?: boolean
 }
 
-// export const Button = styled.Button(({ block, big }: Props) => [
-//   tw`border-0`,
-//   tw`leading-none text-white`,
-//   tw`transition-colors duration-300 bg-carolina-blue hover:bg-carolina-blue-light`,
-//   block && tw`block w-full`,
-//   big && tw`p-5 font-bold uppercase`,
-//   !big && tw`py-2.5 px-5`,
-// ])
-
-export const Button: FC<Props> = ({ children, className }: Props) => {
+export const Button: FC<IButton> = ({ children, className, ...rest }) => {
   const styles = clsx(
     className,
     `border-0
@@ -29,7 +18,7 @@ export const Button: FC<Props> = ({ children, className }: Props) => {
   )
 
   return (
-    <button type="button" className={styles}>
+    <button type="button" className={styles} {...rest}>
       {children}
     </button>
   )
